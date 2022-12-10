@@ -1,12 +1,15 @@
 import React from 'react';
 import AboutMe from '../AboutMe/AboutMe';
 import Banner from '../Banner/Banner';
+import Courses from '../Courses/Courses';
+import Education from '../Education/Education';
 import Interested from '../Interested/Interested';
+import ProfessionalSkills from '../ProfessionalSkills/ProfessionalSkills';
+import Projects from '../Projects/Projects';
 
 const Home = () => {
     return (
         <div>
-            <h3>This is home page </h3>
 
             <section>
                 <Banner></Banner>
@@ -18,6 +21,22 @@ const Home = () => {
 
             <section>
                 <Interested></Interested>
+            </section>
+
+            <section>
+                <Education></Education>
+            </section>
+
+            <section>
+                <Courses></Courses>
+            </section>
+
+            <section className='mt-20'>
+                <ProfessionalSkills></ProfessionalSkills>
+            </section>
+
+            <section className='mt-20'>
+                <Projects></Projects>
             </section>
         </div>
     );

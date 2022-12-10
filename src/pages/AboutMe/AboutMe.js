@@ -1,9 +1,5 @@
 import React from 'react';
 import myImg from '../../images/myImage.JPG';
-import ReactDOM from "react-dom";
-import Pdf from "react-to-pdf";
-
-const ref = React.createRef();
 
 const AboutMe = () => {
     return (
@@ -12,14 +8,7 @@ const AboutMe = () => {
                 <div className='relative'>
                     <img className=' rounded-lg shadow-2xl w-[365px] h-[385px]' src={myImg} alt="" />
                     {/* <div className='absolute right-24 top-1/3 w-[365px] h-[385px] shadow-2xl border-5 rounded-lg border-gray-900'></div> */}
-                    <div className='mx-20 my-5'>
-                    <Pdf targetRef={ref} filename="Resume.pdf">
-                        {({ toPdf }) => <button onClick={toPdf} className='btn btn-gray'>Download Resume</button>}
-                    </Pdf>
-                    </div>
-                </div>
-                <div ref={ref}>
-                    {/* <p>https://drive.google.com/file/d/1Pkf1SbqGW6E6QfYkZkdmfSSWIpS834lw/view?usp=share_link</p> */}
+                   
                 </div>
 
 
