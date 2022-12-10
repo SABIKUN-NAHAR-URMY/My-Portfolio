@@ -11,18 +11,18 @@ const Header = () => {
                     </label>
                     <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
                         <li className='font-bold text-2xl'><Link>Home</Link></li>
-                        <li className='font-bold text-2xl'><Link>About</Link></li>
+                        <li className='font-bold text-2xl'><Link>About Me</Link></li>
                         <li className='font-bold text-2xl'><Link>Projects</Link></li>
                         <li className='font-bold text-2xl'><Link>Contact Me</Link>
                         </li>
                     </ul>
                 </div>
-                <Link className="btn btn-ghost normal-case text-xl">daisyUI</Link>
+                <Link className="btn btn-ghost normal-case text-xl font-bold underline decoration-dashed">Web Developer</Link>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
                     <li className='font-bold text-xl'><Link>Home</Link></li>
-                    <li className='font-bold text-xl'><Link>About</Link></li>
+                    <li className='font-bold text-xl'><Link>About Me</Link></li>
                     <li className='font-bold text-xl'><Link>Projects</Link></li>
                     <li className='font-bold text-xl'><Link>Contact Me</Link></li>
 
