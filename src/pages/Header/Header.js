@@ -13,18 +13,18 @@ const Header = () => {
                         <li className='font-bold text-2xl'><Link>Home</Link></li>
                         <li className='font-bold text-2xl'><Link>About Me</Link></li>
                         <li className='font-bold text-2xl'><Link>Projects</Link></li>
-                        <li className='font-bold text-2xl'><Link>Contact Me</Link>
+                        <li className='font-bold text-2xl'><Link to={'/contactMe'}>Contact Me</Link>
                         </li>
                     </ul>
                 </div>
-                <Link className="btn btn-ghost normal-case text-xl font-bold underline decoration-dashed">Web Developer</Link>
+                <Link className="btn btn-ghost normal-case text-xl font-bold underline decoration-dashed" to={'/'}>Web Developer</Link>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
                     <li className='font-bold text-xl'><Link>Home</Link></li>
                     <li className='font-bold text-xl'><Link>About Me</Link></li>
                     <li className='font-bold text-xl'><Link>Projects</Link></li>
-                    <li className='font-bold text-xl'><Link>Contact Me</Link></li>
+                    <li className='font-bold text-xl'><Link to={'/contactMe'}>Contact Me</Link></li>
 
                 </ul>
             </div>

@@ -4,7 +4,7 @@ const Education = () => {
     return (
         <div>
             <h1 className='text-4xl font-bold text-center'>EDUCATION</h1>
-            <div className='grid grid-cols-1 lg:grid-cols-3 m-20 text-center'>
+            <div className='grid grid-cols-1 lg:grid-cols-3 lg:m-20 text-center'>
                 <div className="card w-96 bg-base-100 shadow-xl mb-6">
                     <div className="card-body">
                         <h2 className="text-center font-bold text-2xl">Bachelor of Science (B.Sc), Computer Science & Engineering</h2>

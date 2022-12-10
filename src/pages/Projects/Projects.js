@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import project1 from '../../images/project1.png';
 import project2 from '../../images/project2.png';
 import project3 from '../../images/project3.png';
@@ -58,6 +59,7 @@ const Projects = () => {
                     </div>
                 </div>
             </div>
+            {/* <Link className='btn mt-4'><button>See More</button></Link> */}
 
         </div>
     );
