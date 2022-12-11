@@ -3,8 +3,8 @@ import './Education.css';
 
 const Education = () => {
     return (
-        <div data-aos="fade-up">
-            <h1 className='text-4xl font-bold text-center'>EDUCATION</h1>
+        <div data-aos="fade-up" id='education'>
+            <h1 className='text-4xl font-bold text-center underline decoration-dashed mb-8'>EDUCATION</h1>
             <div className='grid grid-cols-1 lg:grid-cols-3 lg:m-20 text-center'>
                 <div className="card w-96 bg-base-100 shadow-xl mb-6 edu">
                     <div className="card-body">

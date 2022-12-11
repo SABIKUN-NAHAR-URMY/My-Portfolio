@@ -4,7 +4,7 @@ import './Courses.css';
 const Courses = () => {
     return (
         <div className='text-center courses' data-aos="fade-up">
-            <h1 className='text-4xl font-bold'>Courses</h1>
+            <h1 className='text-4xl font-bold underline decoration-dashed'>Courses</h1>
             <div className="card lg:w-[1000px] bg-base-100 shadow-xl mx-auto">
                 <div className="card-body">
                     <h2 className="text-center text-2xl font-bold">Complete Web Development Course</h2>

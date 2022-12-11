@@ -1,6 +1,7 @@
 import React from 'react';
 import { createBrowserRouter } from 'react-router-dom';
 import AllProjects from '../AllProjects/AllProjects';
+import Blog from '../Blog/Blog';
 import ContactMe from '../ContactMe/ContactMe';
 import Home from '../Home/Home';
 import LensQueen from '../LensQueen/LensQueen';
@@ -19,8 +20,8 @@ export const router = createBrowserRouter([
                 element: <Home></Home>
             },
             {
-                path: '/contactMe',
-                element: <ContactMe></ContactMe>
+                path: '/blog',
+                element: <Blog></Blog>
             },
             {
                 path: '/projectDetails',

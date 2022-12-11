@@ -1,3 +1,4 @@
 .zoom:hover{
+    text-decoration: underline dashed;
     transform: scale(1.1);
 }

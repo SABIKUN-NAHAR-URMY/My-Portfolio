@@ -1,6 +1,7 @@
 import React from 'react';
 import AboutMe from '../AboutMe/AboutMe';
 import Banner from '../Banner/Banner';
+import ContactMe from '../ContactMe/ContactMe';
 import Courses from '../Courses/Courses';
 import Education from '../Education/Education';
 import Interested from '../Interested/Interested';
@@ -37,6 +38,10 @@ const Home = () => {
 
             <section className='mt-20'>
                 <Projects></Projects>
+            </section>
+
+            <section className='mt-20'>
+                <ContactMe></ContactMe>
             </section>
         </div>
     );

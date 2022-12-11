@@ -11,11 +11,13 @@ const Header = () => {
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                     </label>
                     <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
-                        <li className='font-bold text-2xl zoom'><Link to={'/'}>Home</Link></li>
-                        <li className='font-bold text-2xl zoom'><Link>About Me</Link></li>
-                        <li className='font-bold text-2xl zoom'><Link>Projects</Link></li>
-                        <li className='font-bold text-2xl zoom'><Link to={'/contactMe'}>Contact Me</Link>
-                        </li>
+                        <li className='font-bold text-xl zoom'><Link to={'/'}>Home</Link></li>
+                        <li className='font-bold text-xl zoom'><Link to={'/blog'}>Blog</Link></li>
+                        <li className='font-bold text-xl zoom'> <a href="#aboutMe">About Me</a></li>
+                        <li className='font-bold text-xl zoom'> <a href="#education">Education</a></li>
+                        <li className='font-bold text-xl zoom'> <a href="#skills">Skills</a></li>
+                        <li className='font-bold text-xl zoom'> <a href="#projects">Projects</a></li>
+                        <li className='font-bold text-xl zoom'><a href="#contactMe">Contact Me</a></li>
                     </ul>
                 </div>
                 <Link className="btn btn-ghost normal-case text-xl font-bold underline decoration-dashed" to={'/'}>Web Developer</Link>
@@ -23,15 +25,17 @@ const Header = () => {
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
                     <li className='font-bold text-xl zoom'><Link to={'/'}>Home</Link></li>
-                    <li className='font-bold text-xl zoom'><Link to={'/'}>About Me</Link></li>
-                    <li className='font-bold text-xl zoom'><Link>Projects</Link></li>
-                    <li className='font-bold text-xl zoom'><Link to={'/contactMe'}>Contact Me</Link></li>
-
+                    <li className='font-bold text-xl zoom'><Link to={'/blog'}>Blog</Link></li>
+                    <li className='font-bold text-xl zoom'> <a href="#aboutMe">About Me</a></li>
+                    <li className='font-bold text-xl zoom'> <a href="#education">Education</a></li>
+                    <li className='font-bold text-xl zoom'> <a href="#skills">Skills</a></li>
+                    <li className='font-bold text-xl zoom'> <a href="#projects">Projects</a></li>
+                    <li className='font-bold text-xl zoom'><a href="#contactMe">Contact Me</a></li>
                 </ul>
             </div>
 
             <div className="navbar-end mr-2">
-            <a href='/Sabikun_Resume_WebDeveloper.pdf' className="btn btn-gray text-base-300 zoom" download>Download My Resume</a>
+                <a href='/Sabikun_Resume_WebDeveloper.pdf' className="btn btn-gray text-base-300 zoom" download>Download My Resume</a>
             </div>
 
         </div>

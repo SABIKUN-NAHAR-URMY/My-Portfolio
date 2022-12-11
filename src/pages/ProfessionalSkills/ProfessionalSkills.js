@@ -2,8 +2,8 @@ import React from 'react';
 
 const ProfessionalSkills = () => {
     return (
-        <div>
-            <h1 className='text-center text-4xl font-bold'>PROFESSIONAL SKILLS</h1>
+        <div id='skills'>
+            <h1 className='text-center text-4xl font-bold underline decoration-dashed'>PROFESSIONAL SKILLS</h1>
             <div className='text-2xl font-semibold grid grid-cols-1 lg:grid-cols-2 mx-24 lg:mx-96 mt-20'>
                 <div data-aos="fade-up-right">
                     <div>
