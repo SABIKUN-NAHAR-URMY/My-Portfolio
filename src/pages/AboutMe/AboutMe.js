@@ -7,7 +7,7 @@ const AboutMe = () => {
             <div className='px-14'
             data-aos="fade-right">
                 <div className='relative'>
-                    <img className=' rounded-lg shadow-2xl w-[385px] h-[420px]' src={myImg} alt="" />
+                    <img className=' rounded-lg shadow-2xl w-[385px] h-[360px] lg:h-[420px]' src={myImg} alt="" />
                    
                 </div>
 

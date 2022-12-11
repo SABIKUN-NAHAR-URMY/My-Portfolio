@@ -1,8 +1,10 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import './Header.css';
 
 const Header = () => {
+    const location = useLocation();
+
     return (
         <div className="navbar bg-base-100 mb-6">
             <div className="navbar-start">
@@ -13,11 +15,19 @@ const Header = () => {
                     <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
                         <li className='font-bold text-xl zoom'><Link to={'/'}>Home</Link></li>
                         <li className='font-bold text-xl zoom'><Link to={'/blog'}>Blog</Link></li>
-                        <li className='font-bold text-xl zoom'> <a href="#aboutMe">About Me</a></li>
-                        <li className='font-bold text-xl zoom'> <a href="#education">Education</a></li>
-                        <li className='font-bold text-xl zoom'> <a href="#skills">Skills</a></li>
-                        <li className='font-bold text-xl zoom'> <a href="#projects">Projects</a></li>
-                        <li className='font-bold text-xl zoom'><a href="#contactMe">Contact Me</a></li>
+                        {
+                        location.pathname === '/' ?
+                            <>
+                                <li className='font-bold text-xl zoom'> <a href="#aboutMe">About Me</a></li>
+                                <li className='font-bold text-xl zoom'> <a href="#education">Education</a></li>
+                                <li className='font-bold text-xl zoom'> <a href="#skills">Skills</a></li>
+                                <li className='font-bold text-xl zoom'> <a href="#projects">Projects</a></li>
+                                <li className='font-bold text-xl zoom'><a href="#contactMe">Contact Me</a></li>
+                            </>
+                            :
+                            <></>
+
+                        }
                     </ul>
                 </div>
                 <Link className="btn btn-ghost normal-case text-xl font-bold underline decoration-dashed" to={'/'}>Web Developer</Link>
@@ -26,11 +36,19 @@ const Header = () => {
                 <ul className="menu menu-horizontal px-1">
                     <li className='font-bold text-xl zoom'><Link to={'/'}>Home</Link></li>
                     <li className='font-bold text-xl zoom'><Link to={'/blog'}>Blog</Link></li>
-                    <li className='font-bold text-xl zoom'> <a href="#aboutMe">About Me</a></li>
-                    <li className='font-bold text-xl zoom'> <a href="#education">Education</a></li>
-                    <li className='font-bold text-xl zoom'> <a href="#skills">Skills</a></li>
-                    <li className='font-bold text-xl zoom'> <a href="#projects">Projects</a></li>
-                    <li className='font-bold text-xl zoom'><a href="#contactMe">Contact Me</a></li>
+                    {
+                        location.pathname === '/' ?
+                            <>
+                                <li className='font-bold text-xl zoom'> <a href="#aboutMe">About Me</a></li>
+                                <li className='font-bold text-xl zoom'> <a href="#education">Education</a></li>
+                                <li className='font-bold text-xl zoom'> <a href="#skills">Skills</a></li>
+                                <li className='font-bold text-xl zoom'> <a href="#projects">Projects</a></li>
+                                <li className='font-bold text-xl zoom'><a href="#contactMe">Contact Me</a></li>
+                            </>
+                            :
+                            <></>
+
+                        }
                 </ul>
             </div>
 

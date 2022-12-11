@@ -8,7 +8,7 @@ const Banner = () => {
         <div>
             <div className="relative ">
                 <img src={banner} alt='' />
-                <div className="absolute top-3 lg:top-1/4">
+                <div className="absolute top-3 lg:top-1/5">
 
                     <h1 className="text-4xl lg:text-7xl text-white font-bold lg:p-96" style={{ paddingTop: '5rem', margin: 'auto 0', fontWeight: 'normal' }}>
                         Hello! <br />

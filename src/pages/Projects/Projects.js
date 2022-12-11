@@ -54,9 +54,9 @@ const Projects = () => {
                 </div>
             </div>
 
-            <div className='w-[10%] mx-auto'>
+            {/* <div className='w-[10%] mx-auto'>
                 <Link to={'/allProjects'}><button className='btn mt-4'>See More</button></Link>
-            </div>
+            </div> */}
         </div>
     );
 };
