@@ -5,7 +5,7 @@ const ProfessionalSkills = () => {
         <div>
             <h1 className='text-center text-4xl font-bold'>PROFESSIONAL SKILLS</h1>
             <div className='text-2xl font-semibold grid grid-cols-1 lg:grid-cols-2 mx-24 lg:mx-96 mt-20'>
-                <div>
+                <div data-aos="fade-up-right">
                     <div>
                         <h1>HTML</h1>
                         <progress className="progress w-56" value="100" max="100"></progress>
@@ -27,7 +27,7 @@ const ProfessionalSkills = () => {
                         <progress className="progress w-56" value="90" max="100"></progress>
                     </div>
                 </div>
-                <div>
+                <div data-aos="fade-up-left">
                 <div>
                     <h1>JavaScript</h1>
                     <progress className="progress w-56" value="90" max="100"></progress>

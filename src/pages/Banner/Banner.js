@@ -1,6 +1,6 @@
 import React from 'react';
+import { Typewriter } from 'react-simple-typewriter';
 import banner from '../../images/banner.jpg';
-import { Typewriter } from 'react-simple-typewriter'
 
 const Banner = () => {
 
@@ -13,7 +13,7 @@ const Banner = () => {
                     <h1 className="text-4xl lg:text-7xl text-white font-bold lg:p-96" style={{ paddingTop: '5rem', margin: 'auto 0', fontWeight: 'normal' }}>
                         Hello! <br />
                         I'm Sabikun Nahar Urmy <br />
-                       {' '}
+                        {' '}
                         <span style={{ color: 'white', fontWeight: 'bold' }}>
                             {/* Style will be inherited from the parent element */}
                             <Typewriter
