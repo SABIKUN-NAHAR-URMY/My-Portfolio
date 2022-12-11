@@ -20,7 +20,7 @@ const Projects = () => {
                         <p>The main work on the website is Dashboard related. Buyer, Seller, and Admin roles are here. Buyers can
                             book any product and pay for it. This payment method is implemented using Stripe.</p>
                         <div className="card-actions mx-auto">
-                            <Link><button className='btn'>Details</button></Link>
+                            <Link to={'/watchBD'}><button className='btn'>Details</button></Link>
                         </div>
                     </div>
                 </div>
@@ -33,8 +33,8 @@ const Projects = () => {
                         <h2 className="font-bold text-2xl">Lens-Queen</h2>
                         <p>Wedding photography-related login, signup, and google signup systems have been implemented on this
                             website. Here Dynamic page title based on the Route system has been implemented.</p>
-                            <div className="card-actions mx-auto">
-                            <Link><button className='btn'>Details</button></Link>
+                        <div className="card-actions mx-auto">
+                            <Link to={'/lensQueen'}><button className='btn'>Details</button></Link>
                         </div>
                     </div>
                 </div>
@@ -48,13 +48,15 @@ const Projects = () => {
                         <p>On this website, a protected route is provided where the user cannot purchase any system if not logged in
                             and the user will be taken to the login page.</p>
                         <div className="card-actions mx-auto">
-                            <Link><button className='btn'>Details</button></Link>
+                            <Link to={'/techEdu'}><button className='btn'>Details</button></Link>
                         </div>
                     </div>
                 </div>
             </div>
-            {/* <Link className='btn mt-4'><button>See More</button></Link> */}
 
+            <div className='w-[10%] mx-auto'>
+                <Link to={'/allProjects'}><button className='btn mt-4'>See More</button></Link>
+            </div>
         </div>
     );
 };
